@@ -1,0 +1,46 @@
+.counterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    border: 0;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 3px #C2DEFF;
+}
+
+.desc {
+    font-size: 50px;
+}
+
+.counterContainer p {
+    color: #000000;
+}
+
+.counterContainer p span {
+    color: #727272;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 50px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plus {
+    background-color: #f8ecea;
+    color: #c5431e;
+}
+
+.minus {
+    background-color: #C2DEFF;
+    color: #0084FF;
+}

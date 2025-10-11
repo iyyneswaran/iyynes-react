@@ -1,0 +1,151 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    gap: 10px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.userHeaders {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imgAndDesc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.userImage {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(45deg, #ffee00, #ffee00, #ff5e00f9, #ff0800, #ff00e6, #ff00e6);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.userImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  background: white;
+}
+
+
+.heading {
+    font-size: 15px;
+    font-weight: 500;
+  cursor: pointer;
+
+}
+
+.timeStamp {
+    color: #393939;
+    font-weight: 400;
+}
+
+.desc {
+    font-size: 12px;
+    color: #393939;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dots {
+    cursor: pointer;
+}
+
+.postImageContainer {
+    position: relative;
+}
+
+.posterImage {
+    width: 100%;
+}
+
+.speakerIcon {
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 13px;
+    background-color: #23262b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.actionIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon, .saveIcon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.postDesc {
+    line-height: 20px;
+}
+
+.likesCount,
+.likesDesc,
+.commentDesc {
+    font-size: 14px;
+    color: #000;
+    line-height: 22px;
+}
+
+.heartFill {
+    color: #ed0202;
+}
+
+.likesCount {
+    font-size: 17px;
+}
+
+.more,
+.addComment {
+    font-size: 14px;
+    color: #393939;
+    cursor: pointer;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
