@@ -3,6 +3,7 @@ import styles from './LandingPage.module.css';
 import { Link } from 'react-router-dom';
 // import landingAnimation from '../assets/LandingPageAssests/Card.webm'
 
+
 const LandingPage = () => {
     return (
         <div className={styles.LandingPage}>
