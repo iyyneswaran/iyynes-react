@@ -1,3 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+}
+
+
+.backArrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    background-color: #d9bbff;
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.backArrowIcon {
+    color: #6b15dc;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -28,28 +59,28 @@
 }
 
 .userImage {
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
-  padding: 2px;
-  background: linear-gradient(45deg, #ffee00, #ffee00, #ff5e00f9, #ff0800, #ff00e6, #ff00e6);
-  display: inline-block;
-  cursor: pointer;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(45deg, #ffee00, #ffee00, #ff5e00f9, #ff0800, #ff00e6, #ff00e6);
+    display: inline-block;
+    cursor: pointer;
 }
 
 .userImage img {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  display: block;
-  background: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    background: white;
 }
 
 
 .heading {
     font-size: 15px;
     font-weight: 500;
-  cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -110,7 +141,8 @@
     gap: 10px;
 }
 
-.icon, .saveIcon {
+.icon,
+.saveIcon {
     font-size: 20px;
     cursor: pointer;
     transition: all 0.3s ease;

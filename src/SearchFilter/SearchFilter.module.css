@@ -1,0 +1,122 @@
+.container {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+.backArrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    background-color: #d9bbff;
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.backArrowIcon {
+    color: #6b15dc;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container h1 {
+    color: #4e46e5;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.searchBar {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 250px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 70, 229, 0.229);
+}
+
+.searchBar:hover {
+    box-shadow: 0 0 5px rgba(78, 70, 229, 0.427);
+}
+
+.searchBar:focus {
+    box-shadow: 0 0 5px rgba(78, 70, 229, 0.427);
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.filterLabel {
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filterLabel:hover {
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+}
+
+.clearBtn {
+    color: #ff0000;
+    background-color: #ffe3e3;
+}
+
+.listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.itemCard {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.itemCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.2);
+}
+
+.itemCard img {
+    width: 100%;
+}
+
+.itemCard h4 {
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.itemCard p {
+    color: #666;
+    font-size: 14px;
+}

@@ -1,5 +1,35 @@
 .container {
     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+}
+
+.backArrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    background-color: #d9bbff;
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.backArrowIcon {
+    color: #6b15dc;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.colorContainer {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -20,12 +50,13 @@ p {
     height: 200px;
     width: 200px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid #e9fffd;
+    border: 1px solid #c4f9f5;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    box-shadow: 0 0 5px #23aad324;
 }
 
 .btnContainer {
