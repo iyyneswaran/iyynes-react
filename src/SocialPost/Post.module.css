@@ -121,22 +121,24 @@
     position: absolute;
     top: 40px;
     right: 10px;
-    background-color: #eeeeee;
+    background-color: #eeeeee99;
     padding: 10px 15px;
     border: 1px solid #dedede;
     border-radius: 10px;
     filter: blur(0.2px);
-    background: #ffffff64;
+    background: #ffffff27;
     text-shadow: 0 0 1px #000;
 }
 
 .dotModalListHr {
     color: #393939;
+    margin: 10px 0px 10px 0px;
 }
 
 .dotModalList {
     list-style-type: none;
     font-size: 15px;
+    cursor: pointer;
 }
 
 

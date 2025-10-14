@@ -23,6 +23,8 @@ const PostCard = () => {
   const [bookMark, setbookMark] = useState(true);
   const [threeDotModal, setthreeDotModal] = useState(false);
 
+  const listItems = ['View Profile', 'Unfollow', 'Go to post', 'Share to...', 'Copy link', 'Embed', 'Report'];
+
   const navigate = useNavigate();
 
   return (
@@ -45,27 +47,34 @@ const PostCard = () => {
           </div>
 
           <div className={styles.iconContainer}>
-            <BsThreeDots className={styles.dots} onClick={() => alert('Under development')} />
+            <BsThreeDots className={styles.dots} onClick={() => setthreeDotModal(!threeDotModal)} />
           </div>
 
-          <div className={styles.dotModal2}>
+          {threeDotModal ? <div className={styles.dotModal}>
             <ul className={styles.dotModalUl}>
-              <li className={styles.dotModalList}>View user</li>
-              <hr className={styles.dotModalListHr} />
-              <li className={styles.dotModalList}>View user</li>
+              {listItems.map((item, index) => {
+                return (
+                  <>
+                    <li key={index} className={styles.dotModalList}>{item}</li>
+                    <hr className={styles.dotModalListHr} />
+                  </>
+                )
+              })}
             </ul>
-          </div>
+          </div> : null}
 
-          <div className={styles.dotModal}>
+          {threeDotModal ? <div className={styles.dotModal}>
             <ul className={styles.dotModalUl}>
-              <li className={styles.dotModalList}>View user</li>
-              <hr className={styles.dotModalListHr} />
-              <li className={styles.dotModalList}>View user</li>
+              {listItems.map((item, index) => {
+                return (
+                  <>
+                    <li onClick={() => alert('Under development')} key={index} className={styles.dotModalList}>{item}</li>
+                    <hr className={styles.dotModalListHr} />
+                  </>
+                )
+              })}
             </ul>
-          </div>
-
-          
-
+          </div> : null}
 
         </div>
 
