@@ -132,13 +132,14 @@
 .textContainer h3,
 p {
     font-weight: 400;
-    color: #030222;
+    color: #23253f;
 }
 
 
 .textContainer h3 span,
 .textContainer p span {
     color: #030222;
+    font-weight: 600;
 }
 
 .textContainer>div {
