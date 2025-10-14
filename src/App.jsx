@@ -6,7 +6,6 @@ import ColorBox from './ColorChanger/ColorBox';
 import PostCard from './SocialPost/PostCard';
 import LandingPage from './Landing_page/LandingPage';
 import SearchFilter from './SearchFilter/SearchFilter';
-import LeafletMap from './Map/LeafletMap';
 import GalleryApp from './Gallery_app/GalleryApp';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path='/color' element={<ColorBox />} />
         <Route path='/post' element={<PostCard />} />
         <Route path='/searchfilter' element={<SearchFilter />} />
-        <Route path='/map' element={<LeafletMap />} />
         <Route path='/gallery' element={<GalleryApp />} />
       </Routes>
     </Router>
