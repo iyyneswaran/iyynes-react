@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Post.module.css'
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
@@ -21,9 +21,9 @@ const PostCard = () => {
   const [count, setCount] = useState(0);
   const [speaker, setSpeaker] = useState(false);
   const [bookMark, setbookMark] = useState(true);
+  const [threeDotModal, setthreeDotModal] = useState(false);
 
   const navigate = useNavigate();
-
 
   return (
     <div className={styles.container}>
@@ -47,6 +47,26 @@ const PostCard = () => {
           <div className={styles.iconContainer}>
             <BsThreeDots className={styles.dots} onClick={() => alert('Under development')} />
           </div>
+
+          <div className={styles.dotModal2}>
+            <ul className={styles.dotModalUl}>
+              <li className={styles.dotModalList}>View user</li>
+              <hr className={styles.dotModalListHr} />
+              <li className={styles.dotModalList}>View user</li>
+            </ul>
+          </div>
+
+          <div className={styles.dotModal}>
+            <ul className={styles.dotModalUl}>
+              <li className={styles.dotModalList}>View user</li>
+              <hr className={styles.dotModalListHr} />
+              <li className={styles.dotModalList}>View user</li>
+            </ul>
+          </div>
+
+          
+
+
         </div>
 
         <div className={styles.postImageContainer}>
@@ -59,7 +79,10 @@ const PostCard = () => {
         <div className={styles.actionIcons}>
           <div className={styles.mainIcons}>
 
-            {count <= 0 ? <GoHeart onClick={() => setCount(count + 1)} className={`${styles.icon} ${styles.heart}`} /> : <GoHeartFill className={`${styles.icon} ${styles.heartFill}`} />}
+            {count <= 0 ? <GoHeart onClick={() => setCount(count + 1)} className={`${styles.icon} ${styles.heart}`} />
+              :
+              <GoHeartFill onClick={() => setCount(count - 1)} className={`${styles.icon} ${styles.heartFill}`} />}
+
             <FiMessageCircle onClick={() => alert('Under development')} className={`${styles.icon} ${styles.msg}`} />
             <FiSend onClick={() => alert('Under development')} className={`${styles.icon} ${styles.send}`} />
           </div>

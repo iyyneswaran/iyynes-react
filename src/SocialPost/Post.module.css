@@ -35,6 +35,7 @@
     justify-content: center;
     width: 320px;
     gap: 10px;
+    position: relative;
 }
 
 .userInfo {
@@ -103,6 +104,41 @@
 .dots {
     cursor: pointer;
 }
+
+.dotModal {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: #eeeeee;
+    padding: 10px 15px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    z-index: 1;
+    background: #ffffff64;
+}
+
+.dotModal2 {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: #eeeeee;
+    padding: 10px 15px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    filter: blur(0.2px);
+    background: #ffffff64;
+    text-shadow: 0 0 1px #000;
+}
+
+.dotModalListHr {
+    color: #393939;
+}
+
+.dotModalList {
+    list-style-type: none;
+    font-size: 15px;
+}
+
 
 .postImageContainer {
     position: relative;
