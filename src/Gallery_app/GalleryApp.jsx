@@ -87,7 +87,7 @@ const GalleryApp = () => {
                     <p><span>Description: </span>{galleryDetails[currentIndex].desc}</p>
                     <p><span>Year: </span>{galleryDetails[currentIndex].year}</p>
                     <div>
-                        {galleryDetails[currentIndex] === 0 ? <>none</> : <IoMdArrowDropleft className={`${styles.leftArrow} ${styles.arrowIcon}`} onClick={() => setCurrentIndex(currentIndex - 1)} />}
+                        {galleryDetails[currentIndex] === 0 ? null : <IoMdArrowDropleft className={`${styles.leftArrow} ${styles.arrowIcon}`} onClick={() => setCurrentIndex(currentIndex - 1)} />}
                         <IoMdArrowDropright className={`${styles.rightArrow} ${styles.arrowIcon}`} onClick={() => { setCurrentIndex(currentIndex + 1) }} />
                     </div>
                     <span onClick={() => setshowModal(!showModal)} className={styles.crossIcon}>✕</span>

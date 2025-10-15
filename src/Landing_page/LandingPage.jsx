@@ -24,6 +24,7 @@ const LandingPage = () => {
                     <li className={styles.links}><Link className={styles.links} to='/post'>Insta post UI</Link></li>
                     <li className={styles.links}><Link className={styles.links} to='/searchfilter'>Search filter</Link></li>
                     <li className={styles.links}><Link className={styles.links} to='/gallery'>Gallery App</Link></li>
+                    <li className={styles.links}><Link className={styles.links} to='/rating'>Star rating</Link></li>
                 </ul>
             </div>
         </div>

@@ -7,6 +7,7 @@ import PostCard from './SocialPost/PostCard';
 import LandingPage from './Landing_page/LandingPage';
 import SearchFilter from './SearchFilter/SearchFilter';
 import GalleryApp from './Gallery_app/GalleryApp';
+import StarRating from './StarRating/StarRating';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/post' element={<PostCard />} />
         <Route path='/searchfilter' element={<SearchFilter />} />
         <Route path='/gallery' element={<GalleryApp />} />
+        <Route path='/rating' element={<StarRating />} />
       </Routes>
     </Router>
   )
