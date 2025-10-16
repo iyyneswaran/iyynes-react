@@ -29,7 +29,7 @@ const Landing = () => {
     return (
         <div className={styles.container}>
             <h1><span>Hi👋🏻 I'm Iyynes! </span>Welcome to my practice world!</h1>
-            <p>Click over it and visit look over my works</p>
+            <p>Click over it and look over my works</p>
             <div className={styles.projectContainer}>
                 {pages.map((item, index) => (
                     <div key={index} onClick={() => navigate(item.route)}>
