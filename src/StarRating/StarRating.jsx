@@ -1,15 +1,25 @@
 import React, { useState } from 'react'
 import styles from './StarRating.module.css'
+import { useNavigate } from "react-router-dom";
+
 
 // icons 
-import { TiStarFullOutline, TiStarHalfOutline, TiStarOutline } from "react-icons/ti";
+import { TiStarFullOutline, TiStarHalfOutline, TiStarOutline, TiArrowBack } from "react-icons/ti";
+
 
 const StarRating = () => {
 
     const [rating, setRating] = useState(0);
+    const navigate = useNavigate();
+
 
     return (
         <div className={styles.container}>
+
+            <div onClick={() => navigate('/')} className={styles.backArrow}>
+                <TiArrowBack className={styles.backArrowIcon} />
+            </div>
+
             <div className={styles.rating}>
                 <h1>Give your ratings</h1>
                 <div>

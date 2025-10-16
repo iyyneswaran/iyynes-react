@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styles from './GalleryApp.module.css';
+import { useNavigate } from "react-router-dom";
 
 // icon 
 import { IoMdArrowDropright, IoMdArrowDropleft } from "react-icons/io";
+import { TiArrowBack } from "react-icons/ti";
 
 // images
 import img1 from '../assets/GalleryAppAssests/gallery1.jpg';
@@ -12,6 +14,8 @@ import img4 from '../assets/GalleryAppAssests/gallery4.png';
 import img5 from '../assets/GalleryAppAssests/gallery5.jpg';
 
 const GalleryApp = () => {
+
+    const navigate = useNavigate();
 
     const galleryDetails = [
         { image: img1, year: 2025, title: 'Jujutsu Kaisen', desc: 'Jujutsu Kaisen is a Japanese manga series written and illustrated by Gege Akutami.' },
@@ -48,6 +52,11 @@ const GalleryApp = () => {
 
     return (
         <div className={styles.GalleryAppContainer}>
+
+            <div onClick={() => navigate('/')} className={styles.backArrow}>
+                <TiArrowBack className={styles.backArrowIcon} />
+            </div>
+
             <h1>Gallery App</h1>
             <div className={styles.filers}>
                 {years.map((year) => (

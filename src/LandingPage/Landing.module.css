@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    height: 100vh;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #7700ff;
+}
+
+.container h1 span {
+    color: #0e72ff;
+}
+
+.container p {
+    color: #bc8df3;
+    margin-bottom: 30px;
+}
+
+.projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projectContainer>div {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.078);
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fcf9fe;
+}
+
+.projectContainer>div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(187, 0, 255, 0.21)
+}
+
+.projectContainer img {
+    height: 150px;
+}
+
+.icon {
+    color: #7700ff;
+}
+
+.projectContainer>div h3 {
+    color: #7700ff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.projectContainerv>div p {
+    color: #bc8df3;
+    font-size: 15px;
+}

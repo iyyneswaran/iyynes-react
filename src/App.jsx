@@ -8,13 +8,15 @@ import LandingPage from './Landing_page/LandingPage';
 import SearchFilter from './SearchFilter/SearchFilter';
 import GalleryApp from './Gallery_app/GalleryApp';
 import StarRating from './StarRating/StarRating';
+import Landing from './LandingPage/Landing';
 
 function App() {
 
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<LandingPage />} />
+        {/* <Route path='/' element={<LandingPage />} /> */}
+        <Route path='/' element={<Landing />} />
         <Route path='/counter' element={<Counter />} />
         <Route path='/toggletext' element={<ToggleText />} />
         <Route path='/color' element={<ColorBox />} />
