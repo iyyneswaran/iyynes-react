@@ -4,7 +4,6 @@ import Counter from './Counter_app/Counter';
 import ToggleText from './Toggle_text/ToggleText';
 import ColorBox from './ColorChanger/ColorBox';
 import PostCard from './SocialPost/PostCard';
-import LandingPage from './Landing_page/LandingPage';
 import SearchFilter from './SearchFilter/SearchFilter';
 import GalleryApp from './Gallery_app/GalleryApp';
 import StarRating from './StarRating/StarRating';
